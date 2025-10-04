@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/challenge.css" />
+    <title>Challenge</title>
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="/" method="GET">
+        <section>
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="username">Your Name</label>
+              <input
+                type="text"
+                name="user-name"
+                id="username"
+                required
+                placeholder="John Doe"
+              />
+            </li>
+            <li>
+              <label for="useremail">Your E-Mail Address</label>
+              <input
+                type="email"
+                name="user-email"
+                id="useremail"
+                required
+                placeholder="john@doe.com"
+              />
+            </li>
+            <li>
+              <label for="userphone">Your Phone Number</label>
+              <input
+                type="number"
+                name="user-phone"
+                id="userphone"
+                required
+                minlength="9"
+                maxlength="12"
+              />
+            </li>
+            <li>
+              <label for="usermessage">Your Message</label>
+              <textarea
+                name="user-message"
+                id="usermessage"
+                required
+                rows="8"
+              ></textarea>
+            </li>
+            <li>
+              <label for="userfind">How did you find us?</label>
+              <select name="user-find" id="userfind">
+                <option value="web-search">Web Search</option>
+                <option value="word-of-mouth">Word of Mouth</option>
+                <option value="other">Other</option>
+              </select>
+            </li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>How should we reply?</h2>
+          <ul>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="reply"
+                id="call"
+                value="phone"
+                required
+              />
+              <label for="call">Call me</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="reply"
+                id="email"
+                value="email"
+                required
+              />
+              <label for="email">Send me an email</label>
+            </li>
+            <li class="form-control-inline">
+              <input
+                type="radio"
+                name="reply"
+                id="noreply"
+                value="no-reply"
+                required
+              />
+              <label for="noreply">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+
+        <section id="terms">
+          <div class="form-control-inline">
+            <input type="checkbox" name="terms" id="agree-terms" />
+            <label for="agree-terms">Accept Terms</label>
+          </div>
+        </section>
+
+        <section id="buttons" class="form-control-inline">
+          <button type="reset">Clear</button>
+          <button type="submit" id="btn-submit">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>
